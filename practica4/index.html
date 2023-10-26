@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 3 | Ibero Puebla</title>
+        <title>Práctica 4 | Ibero Puebla</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 3: Attiny85 Digital</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 4: Attiny85 Outputs</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Cari.jpeg" alt="..." />
@@ -66,6 +66,7 @@
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Attiny85</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Outputs</a>
 
                     </header>
                 </div>
@@ -75,18 +76,20 @@
             <section>
                 <div class="container px-5">
 
-                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/attiny_portada.png" alt="..." /></figure>
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/output.jpeg" alt="..." /></figure>
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4"> En esta práctica número 3 se utilizó el microcontrolador Attiny85 para poder realizar una serie de circuitos. En ella se empezó desde la instalación de la librería Attiny en Arduino, luego configuramos el Arduino como un ISP, se cofiguró la Tarjeta Attiny, quemamos el Bootloader y se probó primero un código ejemplo para verificar que todo estos pasos se hayan realizado de la manera correcta. Luego proseguimos a analizar los circuitos de Tinkercad para poder implementarlosde manera física en el Protoboard. </p>
+                        <p class="fs-6 mb-4"> En esta práctica 4, se utilizó un microcontrolador ATtiny85 como el corazón de un proyecto que involucra una variedad de componentes electrónicos, incluyendo botones, LED RGB, motores, un buzzer, servomotor y neopíxeles. El objetivo era crear 17 circuitos diferentes para demostrar diversas aplicaciones y capacidades del ATtiny85. </p>
                         <p class="fs-6 mb-4">A lo largo de todos los ejercicios fue necesario cargar el código en el Attiny y luego ya realizamos los circuitos para que funcionara.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En un mundo impulsado por la tecnología, la capacidad de comprender y crear circuitos electrónicos programables es esencial. Arduino, una plataforma accesible y versátil, se ha convertido en una puerta de entrada para personas interesadas en la electrónica y la programación. En esta práctica, se exploraron los conceptos básicos de Arduino al crear varios circuitos simples pero instructivos: por medio de LED's que parpadeaban. A medida que se avanzó desde la teoría hasta la práctica tangible, se fueron adquiriendo habilidades valiosas para futuros proyectos y se desarrolló una comprensión sólida de cómo el software y el hardware interactúan en un sistema.</p>
-                        <p class="fs-6 mb-4">También es importante recalcar lo importante que fue el saber las propiedades de cada elementos que utilizamos, por ejemplo las partes de un LED y saber identificar bien cuál era el cátodo y el ánodo fue algo fundamental para poder realizar los circuitos dados en Tinkercad.</p>
-                        
+                        <p class="fs-6 mb-4"> En el emocionante mundo de la electrónica y la programación, la creatividad y la innovación son el núcleo de cada proyecto. En esta práctica, nos aventuramos a explorar las vastas posibilidades que ofrecen los microcontroladores, en particular el ATtiny85, un pequeño pero poderoso dispositivo que actuará como el cerebro detrás de un asombroso conjunto de 17 circuitos. Armados con un abanico de componentes electrónicos que incluyen botones, LED RGB, motores, un buzzer, un servomotor y neopíxeles, nos sumergiremos en un mundo de experimentación y descubrimiento tecnológico.</p>
+                        <p class="fs-6 mb-4">El ATtiny85, un chip versátil y compacto, será nuestro aliado en esta travesía, permitiéndonos crear una amplia gama de circuitos únicos y funcionales. Cada uno de estos circuitos representará una aplicación distinta y emocionante de la electrónica y la robótica, desde el control de luces y sonidos hasta la automatización de movimientos y la creación de efectos visuales impactantes. Este proyecto nos brindará la oportunidad de comprender la importancia de la programación y la interacción entre componentes electrónicos, mientras desarrollamos habilidades técnicas clave y desbloqueamos el potencial del ATtiny85. </p>
+
+
+
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
                         <p class="fs-6 mb-4">Placa arduino UNO</p>
@@ -96,6 +99,16 @@
                         <p class="fs-6 mb-4">Resistencia</p>
                         <p class="fs-6 mb-4">Cables de puente (Jumpers)</p>
                         <p class="fs-6 mb-4">Pushbutton</p>
+                        <p class="fs-6 mb-4">LED RGB</p>
+                        <p class="fs-6 mb-4">Motor DC</p>
+                        <p class="fs-6 mb-4">LED PWM</p>
+                        <p class="fs-6 mb-4">Buzzer</p>
+                        <p class="fs-6 mb-4">Servomotor</p>
+                        <p class="fs-6 mb-4">Neopixel</p>
+                        <p class="fs-6 mb-4">Transistor</p>
+
+
+
 
                         
                         <p id="desarrollo">
@@ -134,7 +147,7 @@
                         <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_14.png" alt="..." /></figure>
                         <p class="fs-6 mb-4">5. Analizar los circuitos en Tinkercad.</p>
                         <p class="fs-6 mb-4">6. Construcción del Circuito: Se construyó el circuito físico en la protoboard siguiendo un esquema específico.</p>
-                        <p class="fs-6 mb-4">7. Programación: A través del IDE de Arduino, escribimos el código necesario para controlar el circuito. .</p>
+                        <p class="fs-6 mb-4">7. Programación: A través del IDE de Arduino, escribimos el código necesario para controlar el circuito. </p>
                         <p class="fs-6 mb-4">8. Carga y Ejecución: Luego de escribir el código, se cargó el programa en la placa Arduino mediante el cable USB. Esto transferió el código a la placa y permitió que el programa se ejecutara.</p>
                         <p class="fs-6 mb-4">9. Resultados: Se observó cómo el circuito funcionaba a base del patrón definido por el código. Esto se evidenció tanto en la simulación como en el circuito construido.</p>
 
@@ -167,6 +180,14 @@
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_12.png" alt="..." /></figure>
                             <p class="fs-6 mb-4">Simulación 13 - Tinkercad.</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_13.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Simulación 14 - Tinkercad.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_14.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Simulación 15 - Tinkercad.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_15.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Simulación 16 - Tinkercad.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_16.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Simulación 17 - Tinkercad.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_17.png" alt="..." /></figure>
 
 
 
@@ -212,38 +233,53 @@
                             <p class="fs-6 mb-4">Construcción 13 - Código y circuito.</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_13.png" alt="..." /></figure>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_13.jpeg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Construcción 14 - Código y circuito.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_14.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_14.jpeg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Construcción 15 - Código y circuito.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_15.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_15.jpeg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Construcción 16 - Código y circuito.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_16.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_16.jpeg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Construcción 17 - Código y circuito.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_17.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_17.jpeg" alt="..." /></figure>
 
                             
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
                         <p class="fs-6 mb-4">Enseguida, se van a presentar los circuitos que han sido ensamblados utilizando la placa Arduino Uno. Estos circuitos serán exhibidos a través de videos que detallarán su funcionamiento y montaje.</p>
-                        <p class="fs-6 mb-4">Circuito 1: Parpadeo de LED.</p>
-                        <p class="fs-6 mb-4">Circuito 2: Prender LED. </p>
-                        <p class="fs-6 mb-4">Circuito 3: Apagado de LED.</p>
-                        <p class="fs-6 mb-4">Circuito 4: Parpadeo de LED rápido.</p>
-                        <p class="fs-6 mb-4">Circuito 5: Parpadeo de dos LED's secuencial. </p>
-                        <p class="fs-6 mb-4">Circuito 6: Parpadeo de tres LED's secuencial. </p>
-                        <p class="fs-6 mb-4">Circuito 7: Prender LED con un botón. </p>
-                        <p class="fs-6 mb-4">Circuito 8: Prender LED con un botón.</p>
-                        <p class="fs-6 mb-4">Circuito 9: Prender LED con un botón.</p>
-                        <p class="fs-6 mb-4">Circuito 10: Prender LED con dos botones. </p>
-                        <p class="fs-6 mb-4">Circuito 11: Apagar LED con dos botones. </p>
-                        <p class="fs-6 mb-4">Circuito 12: Si el botón se presiona se prenden los LED's de manera secuencial. </p>
-                        <p class="fs-6 mb-4">Circuito 13: Si un botón se presiona se prenden LED's de manera secuencial, si el otro botón se presiona se apagan. </p>
+                        <p class="fs-6 mb-4">Circuito 1: Si se presiona un botón el LED prende, si se presiona el otro el LED se apaga.</p>
+                        <p class="fs-6 mb-4">Circuito 2: Si se presiona un botón el LED parpadea, si se presiona el otro el LED se apaga. </p>
+                        <p class="fs-6 mb-4">Circuito 3: Si se presiona un botón el buzzer prende, si se presiona el otro el buzzer se apaga.</p>
+                        <p class="fs-6 mb-4">Circuito 4: Un botón prende de un color por un momento, otro botón prende de otro color por un momento.</p>
+                        <p class="fs-6 mb-4">Circuito 5: Un botón prende de color diferente y el otro botón lo regresa al color anterior. </p>
+                        <p class="fs-6 mb-4">Circuito 6: Un botón prende el motor y el otro botón lo apaga. </p>
+                        <p class="fs-6 mb-4">Circuito 7: Si se presiona un botón el LED prende lentamente, el otro lo apaga lentamente. </p>
+                        <p class="fs-6 mb-4">Circuito 8: Si se mantiene presionado un botón el LED prende lentamente, el otro lo apaga lentamente.</p>
+                        <p class="fs-6 mb-4">Circuito 9: Si se presiona un botón el buzzer suena lentamente más, el otro lo apaga lentamente.</p>
+                        <p class="fs-6 mb-4">Circuito 10: Si se mantiene presionado un botón el buzzer suena lentamente más, el otro lo apaga lentamente. </p>
+                        <p class="fs-6 mb-4">Circuito 11: Si se presiona un botón el motor prende lentamente, el otro lo apaga lentamente. </p>
+                        <p class="fs-6 mb-4">Circuito 12: Se configura el servomotor para que prenda. </p>
+                        <p class="fs-6 mb-4">Circuito 13: Si se mantiene presionado el botón el servomotor gira hacia un lado, con el otro botón gira opuesto. </p>
+                        <p class="fs-6 mb-4">Circuito 14: Si se presiona el botón el neopixel va a prender de diferentes colores, el otro botón lo apaga. </p>
+                        <p class="fs-6 mb-4">Circuito 15: Cada vez que se oprime un botón el neopixel vaa cambiar de color, el otro botón regresa el color. </p>
+                        <p class="fs-6 mb-4">Circuito 16: Cada vez que presionas el botón se va prendiendo un neopixel, el otro lo apaga. </p>
+                        <p class="fs-6 mb-4">Circuito 17: Si presionas un botón cada neopixel se va a prender de manera ascendente, el otro lo apaga. </p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
                             <source src="video/videos_circuitos.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En esta práctica se ha logrado explotar diversos aspectos de la electrónica y programación al trabajar con los LED's, botones, microcontrolador Attiny 85 y Arduino UNO. Durante el desarrollo de los circuitos  Durante el desarrollo de los circuitos y la programación, se han logrado varios objetivos y hemos adquirido valiosas lecciones. En primer lugar, hemos aprendido a diseñar circuitos simples pero efectivos utilizando componentes básicos como LEDs y botones. La manipulación de LEDs nos ha permitido comprender los principios de la corriente eléctrica y la resistencia, así como cómo controlar la iluminación de los diodos emisores de luz mediante la programación. La inclusión de botones en nuestros circuitos nos ha brindado la oportunidad de explorar la interacción física con dispositivos electrónicos. Aprendimos cómo utilizar el estado de los botones para activar o desactivar LEDs, lo que es fundamental en el diseño de sistemas de control. La programación de microcontroladores Attiny85 y Arduino ha sido un paso crucial en nuestra práctica. Hemos descubierto cómo cargar programas en estos dispositivos y utilizarlos para controlar nuestros circuitos. Esto nos ha proporcionado una base sólida para futuros proyectos de electrónica y robótica.</p>
-                        <p class="fs-6 mb-4">En resumen, esta práctica nos ha proporcionado un valioso conocimiento sobre la electrónica y la programación, así como la capacidad de crear circuitos interactivos utilizando LEDs, botones, Attiny85 y Arduino. Estos conocimientos y habilidades son fundamentales en el campo de la electrónica y la ingeniería, y estamos ansiosos por aplicarlos en futuros proyectos.</p>
+                        <p class="fs-6 mb-4">En conclusión, se llevaron a cabo un total de 17 circuitos con microcontroladores ATtiny para controlar una variedad de dispositivos electrónicos, que incluyen LED, zumbadores, LED RGB, servomotores, neopíxeles y tiras de neopíxeles. Estos proyectos ilustran la versatilidad y la potencia de los microcontroladores ATtiny para crear soluciones personalizadas y eficientes en términos de recursos para una amplia gama de aplicaciones. Desde la iluminación creativa hasta el control de movimiento, estos circuitos demuestran cómo los microcontroladores ATtiny pueden ser utilizados de manera efectiva para dar vida a ideas y proyectos electrónicos únicos. La combinación de programación inteligente y componentes electrónicos hábilmente seleccionados permite la creación de dispositivos que pueden ser utilizados en aplicaciones prácticas y creativas, lo que subraya la importancia de la electrónica y la programación en la innovación tecnológica. Estos 17 circuitos son un testimonio de la capacidad de los microcontroladores ATtiny para inspirar la creatividad y el desarrollo en el mundo de la electrónica y la automatización.</p>
                         
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">Ximeeeee, Yeah GG. (2022). Qué es arduino, cómo funciona y qué puedes hacer con uno. Xataka. https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno</p>
+                        <p class="fs-6 mb-4">José, G. (2022). Qué es arduino, cómo funciona y qué puedes hacer con uno. Xataka. https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno</p>
                         <p class="fs-6 mb-4">Fundación Aquae. (2020, 30 octubre). ¿Sabes qué es un arduino y para qué sirve? - Fundación AQUAE. https://www.fundacionaquae.org/wiki/sabes-arduino-sirve/</p>
                         <p class="fs-6 mb-4">¿Qué es arduino y para qué sirve? - definición. (2021, 11 febrero). GEEKNETIC. https://www.geeknetic.es/Arduino/que-es-y-para-que-sirve</p>
                         
