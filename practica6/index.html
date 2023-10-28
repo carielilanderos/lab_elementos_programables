@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 3 | Ibero Puebla</title>
+        <title>Práctica 6 | Ibero Puebla</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 3: Attiny85 Digital</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 6: Sensores digitales, analógicos, inteligentes</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Cari.jpeg" alt="..." />
@@ -61,11 +61,13 @@
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 21, 2023</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre 26, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Attiny85</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Sensores</a>
+
 
                     </header>
                 </div>
@@ -75,12 +77,12 @@
             <section>
                 <div class="container px-5">
 
-                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/attiny_portada.png" alt="..." /></figure>
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/portpr6.png" alt="..." /></figure>
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4"> En esta práctica número 3 se utilizó el microcontrolador Attiny85 para poder realizar una serie de circuitos. En ella se empezó desde la instalación de la librería Attiny en Arduino, luego configuramos el Arduino como un ISP, se cofiguró la Tarjeta Attiny, quemamos el Bootloader y se probó primero un código ejemplo para verificar que todo estos pasos se hayan realizado de la manera correcta. Luego proseguimos a analizar los circuitos de Tinkercad para poder implementarlosde manera física en el Protoboard. </p>
-                        <p class="fs-6 mb-4">A lo largo de todos los ejercicios fue necesario cargar el código en el Attiny y luego ya realizamos los circuitos para que funcionara.</p>
+                        <p class="fs-6 mb-4"> En esta extensa práctica de investigación, se exploraron 30 sensores de diferentes tipos, incluyendo sensores digitales, analógicos e inteligentes. El objetivo principal de esta investigación fue conocer en profundidad la variedad de sensores disponibles y su aplicabilidad en diferentes situaciones. Posteriormente, se llevaron a cabo dos enfoques distintos para la implementación práctica, utilizando tanto la placa Arduino Uno como el microcontrolador ATtiny85. El proceso de investigación se centró en la identificación y comprensión de cada tipo de sensor, considerando sus principios de funcionamiento, características técnicas, ventajas y limitaciones. Esto permitió una selección informada de los sensores más adecuados para las aplicaciones deseadas. Una vez completada la fase de investigación, se procedió a la creación de dos circuitos para cada tipo de sensor, es decir, dos circuitos digitales, dos analógicos y dos inteligentes, lo que resultó en un total de seis circuitos. Estos circuitos se diseñaron y ensamblaron teniendo en cuenta las especificaciones de cada sensor, así como las necesidades del proyecto en el que se aplicarían. </p>
+                        <p class="fs-6 mb-4">La programación de estos circuitos se llevó a cabo utilizando tanto la placa Arduino Uno como el microcontrolador ATtiny85. Esto permitió demostrar la versatilidad de ambas plataformas en la implementación de sistemas basados en sensores. Se desarrollaron programas específicos para cada configuración de sensor, asegurando la adquisición de datos precisa y el procesamiento necesario.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
@@ -96,43 +98,26 @@
                         <p class="fs-6 mb-4">Resistencia</p>
                         <p class="fs-6 mb-4">Cables de puente (Jumpers)</p>
                         <p class="fs-6 mb-4">Pushbutton</p>
+                        <p class="fs-6 mb-4">Dipswitch </p>
+                        <p class="fs-6 mb-4">Potenciómetro</p>
+                        <p class="fs-6 mb-4">Sensor touch</p>
+                        <p class="fs-6 mb-4">Sensor magnético</p>
+                        <p class="fs-6 mb-4">Sensor ultrasónico</p>
+
+
+
+
+
+
 
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
                         <p class="fs-6 mb-4">1. Instalación de librería Attiny.</p>
-                        <p class="fs-6 mb-4">Identificamos Archivos (File) -> Preferencias </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_1.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">Se abre el panel de preferencias y metemos el siguiente URL https://raw.githubusercontent.com/damellis/attiny/ide-1.6x.-boards-manager/package_damellis_attiny_index.json </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_2.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">Proseguimos a identificar Herramientas (Tools) en la parte superior, nos vamos a la parte de Board: Arduino Uno y seleccionamos Boards Manager... </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_3.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">Veremos que se abre la parte de Boards Manager y para esta computadora (MacBook Air) se escogió attiny by David A. Mellis. </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_4.png" alt="..." /></figure>
                         <p class="fs-6 mb-4">2. Configuración del Arduino como ISP.</p>
-                        <p class="fs-6 mb-4">Nuevamente identificamos Archivos (File) -> Ejemplos -> 11. ArduinoISP -> ArduinoISP </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_5.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">Se abre una pestaña con un código programado que tenemos que correr para verificar que hayamos hecho los pasos anteriores de manera correcta. </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_6.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">Nos vamos a la parte de Herramientas (Tools) -> Programador (Programmer) -> AVR ISP </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_7.png" alt="..." /></figure>
                         <p class="fs-6 mb-4">3. Configuración de la Tarjeta Attiny.</p>
-                        <p class="fs-6 mb-4">Identificamos Herramientas (Tools) -> Board: "Arduino Uno" -> ATtiny-Core -> ATtiny 25/45/85   </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_8.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">Nuevamente nos vamos a Herramientas (Tools) -> Clock -> 1MHz (internal)   </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_9.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">Regresamos a Herramientas (Tools) -> Programador (Programmer: Arduino as ISP) -> Arduino as ISP  </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_10.png" alt="..." /></figure>
                         <p class="fs-6 mb-4">4. Quemar Bootloader</p>
-                        <p class="fs-6 mb-4">Realizamos el siguiente circuito en el Protoboard.  </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_11.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">Confirmamos que nuestras preferencias estén de la siguiente manera.  </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_12.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">Identificamos Herramientas (Tools) y seleccionamos la opción de hasta abajo que dice Burn Bootloader.  </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_13.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">Corremos el programa y debe salir "averdue done. Thank you".  </p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny_14.png" alt="..." /></figure>
-                        <p class="fs-6 mb-4">5. Analizar los circuitos en Tinkercad.</p>
+                        <p class="fs-6 mb-4">5. Crear y analizar los circuitos en Tinkercad.</p>
                         <p class="fs-6 mb-4">6. Construcción del Circuito: Se construyó el circuito físico en la protoboard siguiendo un esquema específico.</p>
                         <p class="fs-6 mb-4">7. Programación: A través del IDE de Arduino, escribimos el código necesario para controlar el circuito. </p>
                         <p class="fs-6 mb-4">8. Carga y Ejecución: Luego de escribir el código, se cargó el programa en la placa Arduino mediante el cable USB. Esto transferió el código a la placa y permitió que el programa se ejecutara.</p>
@@ -153,20 +138,6 @@
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_5.png" alt="..." /></figure>
                             <p class="fs-6 mb-4">Simulación 6 - Tinkercad.</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_6.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Simulación 7 - Tinkercad.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_7.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Simulación 8 - Tinkercad.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_8.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Simulación 9 - Tinkercad.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_9.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Simulación 10 - Tinkercad.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_10.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Simulación 11 - Tinkercad.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_11.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Simulación 12 - Tinkercad.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_12.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Simulación 13 - Tinkercad.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/simulacion_13.png" alt="..." /></figure>
 
 
 
@@ -191,46 +162,18 @@
                             <p class="fs-6 mb-4">Construcción 6 - Código y circuito.</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_6.png" alt="..." /></figure>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_6.jpeg" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Construcción 7 - Código y circuito.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_7.png" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_7.jpeg" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Construcción 8 - Código y circuito.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_8.png" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_8.jpeg" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Construcción 9 - Código y circuito.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_9.png" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_9.jpeg" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Construcción 10 - Código y circuito.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_10.png" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_10.jpeg" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Construcción 11 - Código y circuito.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_11.png" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_11.jpeg" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Construcción 12 - Código y circuito.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_12.png" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_12.jpeg" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Construcción 13 - Código y circuito.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo_13.png" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion_13.jpeg" alt="..." /></figure>
 
                             
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
                         <p class="fs-6 mb-4">Enseguida, se van a presentar los circuitos que han sido ensamblados utilizando la placa Arduino Uno. Estos circuitos serán exhibidos a través de videos que detallarán su funcionamiento y montaje.</p>
-                        <p class="fs-6 mb-4">Circuito 1: Parpadeo de LED.</p>
-                        <p class="fs-6 mb-4">Circuito 2: Prender LED. </p>
-                        <p class="fs-6 mb-4">Circuito 3: Apagado de LED.</p>
-                        <p class="fs-6 mb-4">Circuito 4: Parpadeo de LED rápido.</p>
-                        <p class="fs-6 mb-4">Circuito 5: Parpadeo de dos LED's secuencial. </p>
-                        <p class="fs-6 mb-4">Circuito 6: Parpadeo de tres LED's secuencial. </p>
-                        <p class="fs-6 mb-4">Circuito 7: Prender LED con un botón. </p>
-                        <p class="fs-6 mb-4">Circuito 8: Prender LED con un botón.</p>
-                        <p class="fs-6 mb-4">Circuito 9: Prender LED con un botón.</p>
-                        <p class="fs-6 mb-4">Circuito 10: Prender LED con dos botones. </p>
-                        <p class="fs-6 mb-4">Circuito 11: Apagar LED con dos botones. </p>
-                        <p class="fs-6 mb-4">Circuito 12: Si el botón se presiona se prenden los LED's de manera secuencial. </p>
-                        <p class="fs-6 mb-4">Circuito 13: Si un botón se presiona se prenden LED's de manera secuencial, si el otro botón se presiona se apagan. </p>
+                        <p class="fs-6 mb-4">Circuito 1 (digital): Al presionar el botón el LED va a prender.</p>
+                        <p class="fs-6 mb-4">Circuito 2 (digital): Al subir un sitch el Led se va a prender . </p>
+                        <p class="fs-6 mb-4">Circuito 3 (analógico): Al girar el potenciómetro hasta un extremo el Led prende.</p>
+                        <p class="fs-6 mb-4">Circuito 4 (analógico): Con el sensor touch, cuando detecta un objeto el Led se apaga.</p>
+                        <p class="fs-6 mb-4">Circuito 5 (inteligente): Con el sensor magnético va a detectar cuando un imán está cerca. </p>
+                        <p class="fs-6 mb-4">Circuito 6 (inteligente): Con el sensor ultrasónico el Led prende cuando un objeto se acerca. </p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
                             <source src="video/videos_circuitos.mp4" type="video/mp4">
                         </video></p></figure>
