@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Proyecto final | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Proyecto final: BIOARMBAND</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Cari.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Carieli Landeros Centeno</div>
+                                <div class="text-muted">Ingeniería Biomédica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Diciembre 01, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Attiny85</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Sensores</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Wearable</a>
+
+
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/portada_bio.png" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4"> Como proyecto final de esta materia se creó un wearable que tenía como objetivo crear un dispositivo que utilizara baterías que se pudiera utilizar y colocar en el cuerpo de una persona o una mascota, en ella se incluyó una pantalla OLED e implementamos tres sensores diferemtes, uno de ritmo cardíaco, otro de oxigenación y finalmente de temperatura, en ella se incluyó también buzzers, botones y LED's como alarma visuales y auditivas. </p>
+                        <p class="fs-6 mb-4">La programación de estos circuitos se llevó a cabo con el microcontrolador ATtiny85. Esto permitió demostrar la versatilidad de ambas plataformas en la implementación de sistemas basados en sensores. Se desarrollaron programas específicos para cada configuración de sensor, asegurando la adquisición de datos precisa y el procesamiento necesario.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">Un wearable es un dispositivo conectado que se puede llevar puesto, ya que a cualquier objeto se le puede añadir un componente que lo hará inteligente. Los más habituales registran aquello que no podemos ver a simple vista, como la frecuencia cardíaca, nuestra frecuencia respiratoria, las horas de sueño, el bienestar o el estrés. Algunos ejemplos de wearables son objetos como gafas, auriculares, pulseras, camisetas, cinturones, relojes, calcetines o zapatos. Muchos suelen confundirlos con los teléfonos inteligentes, pero la diferencia es que estos están integrados en nuestro cuerpo, liberando de alguna manera las manos del usuario (Kinza Yasar & Wigmore, 2022).</p>
+                        <p class="fs-6 mb-4">El Attiny85, un pequeño microcontrolador, con el que podremos realizar pequeños proyectos, en los que no necesitamos gran cantidad de memoria ni de entradas ni de salidas. Este micro lo podremos programar con nuestro entorno de escritorio Arduino. Existe un proceso completo en el que puedes programar tu Arduino para programar tu Attiny85 (“Electromaker”, 2017). Hoy en día, las personas usan dispositivos portátiles para monitorear la salud, de modo que pueden rastrear y recibir múltiples notificaciones de cómo está su frecuencia cardíaca, o incluso su presión arterial, en ese momento exacto. </p>
+                        <p class="fs-6 mb-4">Los sensores que íbamos a utilizar para este proyecto son el MAX30102, y un Sensor Mlx90614 M011, por eso pensé que sería bueno dar una breve explicación de cada sensor. El MAX30102 es un módulo biosensor de monitorización de frecuencia cardíaca y oximetría de pulso integrado. Incluye LED internos, fotodetectores, elementos ópticos y electrónica de bajo ruido con rechazo de luz ambiental. El MAX30102 proporciona una solución de sistema completa para facilitar el proceso de diseño de dispositivos móviles y portátiles. El sensor GY-906 MLX90614 puede medir la temperatura ambiente en función de la resistencia del termistor en la placa. Conecte la línea de alimentación del módulo (centro) y tierra (-) a 5V y GND en el Arduino respectivamente. Conecte el pin de señal del módulo (S) al pin A0 del Arduino. </p>
+   
+
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">Sensor MAX30102 </p>
+                        <p class="fs-6 mb-4">Sensor GY-906 MLX90614</p>
+                        <p class="fs-6 mb-4">Attiny85</p>
+                        <p class="fs-6 mb-4">Push Button</p>
+                        <p class="fs-6 mb-4">Resistencia 1kohm</p>
+                        <p class="fs-6 mb-4">Cables de puente (Jumpers)</p>
+                        <p class="fs-6 mb-4">Pushbutton</p>
+                        <p class="fs-6 mb-4">Arduino UNO </p>
+                 
+
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">1: Determinar los sensores a programar (temperatura, oxigenación, frecuencia cardíaca).</p>
+                        <p class="fs-6 mb-4">2. Diseño en protoboard.</p>
+                        <p class="fs-6 mb-4">3. Realización del código en Arduino.</p>
+                        <p class="fs-6 mb-4">4. Crear el circuito en PCB.</p>
+                        <p class="fs-6 mb-4">5. Diseño de carcasa del wearable.</p>
+                        <p class="fs-6 mb-4">6. Pruebas finales..</p>
+
+
+                        <p id="simulacion">
+                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Circuito en Protoboard</h1>
+                        <p class="fs-6 mb-4">A continuación se muestra cómo fue la conexión de los 3 sensores en el protoboard, ahí mismo también se puede apreciar la pantalla OLED y los botones.</p>
+                        <p class="fs-6 mb-4">Circuito 1 - Protoboard.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito1.webp" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Circuito 2 - Protoboard.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito2.webp" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Circuito 3 - Protoboard.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito3.webp" alt="..." /></figure>
+ 
+
+
+                        <p id="construccion">
+                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Programación</h1>
+                        <p class="fs-6 mb-4">Se utilizaron tres sensores, pero el MAX3102 tiene dos, por eso solo hay dos programas. Attiny Core es importante para programar ambos códigos, aquí está el enlace: https://github.com/SpenceKonde/ATTinyCore/blob/v2.0.0-devThis-is-the-head-submit-PRs-against-this/Installation.md</p>
+                        <p class="fs-6 mb-4">Código 1 - Sensor de ritmo cardíaco y oxigenación.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo1.webp" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Código 2 - Código de temperatura. </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo2.webp" alt="..." /></figure>
+
+                        <p id="diseño pcb">
+                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño PCB</h1>
+                        <p class="fs-6 mb-4">El circuito se realizó en un esquema para posteriormente actualizarlo en forma de PCB. También realizamos el PCB mediante el método "Planchado", en el cual te sugerimos seguir el siguiente video. Te dejamos los circuitos para que los imprimas, si quieres hacerlo así. </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pcb1.webp" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pcb2.webp" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pcb3.webp" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pcb4.webp" alt="..." /></figure>
+              
+                        <p id="carcasa">
+                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5"> Carcasa para proteger el circuito </h1>
+                        <p class="fs-6 mb-4">A lo largo de este proyecto, también asumimos el diseño de un recinto para salvaguardar nuestro circuito. Dentro de él, incorporamos un área dedicada para mostrar la pantalla, facilitar el uso de los botones y permitir una salida audible del timbre. En el lado opuesto del recinto, se previó el contacto directo del sensor (ya sea de frecuencia cardíaca, oxigenación o temperatura) con la piel para presentar con precisión los resultados correspondientes.El diseño se realizó en el software SolidWorks. </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/car1.webp" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/car2.webp" alt="..." /></figure>
+
+                  
+              
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Después de colocar el diseño adecuado, asegúrese de que la PCB y la estructura 3D encajen y funcionen correctamente. Eso es todo, creemos que con esto podrás pasear por la calle con tu mascota, sin que se queme con el sol y al mismo tiempo cuidas de su salud.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/resu1.webp" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                        <source src="video/video1.mp4" type="video/mp4">
+        
+
+                        </video></p></figure>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">En conclusión, el desarrollo de este proyecto que integró la creación de un dispositivo wearable con tres sensores fundamentales (temperatura, ritmo cardíaco y oxigenación), gestionados por un attiny85, ha representado un paso significativo en la convergencia entre la tecnología y la salud. La conjunción de ingeniería electrónica, diseño asistido por computadora mediante SolidWorks para la carcasa, y una innovadora técnica de fabricación, como el método de planchado para la PCB, ha resultado en la materialización de un dispositivo compacto y funcional. </p>
+                        <p class="fs-6 mb-4">La implementación de estos elementos tecnológicos en un único wearable ofrece no solo comodidad para el usuario, sino también una herramienta integral para el monitoreo de aspectos vitales. La recolección de datos en tiempo real sobre la temperatura corporal, el ritmo cardíaco y la saturación de oxígeno proporciona una visión holística de la salud del usuario, permitiendo una vigilancia más proactiva y personalizada. </p>
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Electromaker. (2017). Retrieved October 26, 2023, from Electromaker.io website: https://www.electromaker.io/blog/article/introduction-to-the-attiny85-19 </p>
+                        <p class="fs-6 mb-4">Kinza Yasar, & Wigmore, I. (2022). wearable technology. Retrieved October 26, 2023, from Mobile Computing website: https://www.techtarget.com/searchmobilecomputing/definition/wearable-technology </p>
+                        <p class="fs-6 mb-4">MAX30102 Datasheet and Product Info | Analog Devices. (2015). Retrieved October 26, 2023, from Analog.com website: https://www.analog.com/en/products/max30102.html#product-overview </p>
+                        
+
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
